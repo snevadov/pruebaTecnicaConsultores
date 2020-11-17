@@ -1,0 +1,24 @@
+<p>obtener-maestro works!</p>
+<h2>Listado de ciudades</h2>
+<table mat-table [dataSource]="municipios" class="mat-elevation-z8" style="width:
+    100%;">
+    <ng-container matColumnDef="pais">
+        <th mat-header-cell *matHeaderCellDef>Pais</th>
+        <td mat-cell *matCellDef="let municipio"> {{municipio.Pais}} </td>
+    </ng-container>
+    <ng-container matColumnDef="dpto">
+        <th mat-header-cell *matHeaderCellDef>Dpto</th>
+        <td mat-cell *matCellDef="let municipio"> {{municipio.Dpto}} </td>
+    </ng-container>
+    <ng-container matColumnDef="mpio">
+        <th mat-header-cell *matHeaderCellDef>Mpio</th>
+        <td mat-cell *matCellDef="let municipio"> {{municipio.Mpio}} </td>
+    </ng-container>
+    <ng-container matColumnDef="desc">
+        <th mat-header-cell *matHeaderCellDef>DescripcionMunicipio</th>
+        <td mat-cell *matCellDef="let municipio"> {{municipio.DescripcionMunicipio}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="['pais', 'dpto', 'mpio', 'desc']"></tr>
+    <tr mat-row *matRowDef="let fila; columns: ['pais', 'dpto', 'mpio', 'desc'];"></tr>
+</table>

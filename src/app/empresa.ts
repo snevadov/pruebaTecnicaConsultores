@@ -1,0 +1,25 @@
+export class Empresa {
+    constructor(
+        public TipoIdentificacion: string = '',
+        public Identificacion: number = 0,
+        public DireccionEmpresa: string = '',
+        public Pais: number = 0,
+        public Departamento: number = 0,
+        public Municipio: number = 0,
+        public NombreEmpresa: string = '',
+        public PrimerNombre: string = '',
+        public SegundoNombre: string = '',
+        public PrimerApellido: string = '',
+        public SegundoApellido: string = '',
+        public TipoVia: string = '',
+        public NumeroVia: number = 0,
+        public AdicionalVia: string = '',
+        public NumeroCruce: number = 0,
+        public AdicionalCruce: string = '',
+        public Ubicacion: string = '',
+        public Telefono: number = 0,
+        public AutorizaEnvioEmail: boolean = false,
+        public AutorizaEnvioSMS: boolean = false,
+        public EmailNotificacionEmpresa: string = '',
+    ) { }
+}

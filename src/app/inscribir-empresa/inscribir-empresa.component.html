@@ -1,0 +1,177 @@
+<p>inscribir-empresa works!</p>
+<h2>Inscribir empresa <mat-icon>home</mat-icon></h2>
+<form (ngSubmit)="onSubmit()" #formEmpresa="ngForm">
+    <p>
+
+        <mat-form-field>
+            <input matInput name="nit" [(ngModel)]="nit"
+                type="text"
+                placeholder="nit">
+        </mat-form-field>
+    </p>
+    <p>
+        <button type="submit" mat-flat-button color="accent">Leer</button>
+    </p>
+</form>
+<form (ngSubmit)="onUpdate()" #formUpdateEmpresa="ngForm">
+    <div>
+        <mat-form-field>
+            <input matInput name="tipoidentificacion" [(ngModel)]="empresa.TipoIdentificacion"
+                type="text"
+                placeholder="TipoIdentificacion">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="identificacion" [(ngModel)]="empresa.Identificacion"
+                type="number"
+                placeholder="Identificacion">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field>
+            <input matInput name="direccion" [(ngModel)]="empresa.DireccionEmpresa"
+                type="text"
+                placeholder="Dirección">
+        </mat-form-field>
+    </div>
+    <p>
+        <mat-form-field>
+            <input matInput name="pais" [(ngModel)]="empresa.Pais"
+                type="number"
+                placeholder="País">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="departamento" [(ngModel)]="empresa.Departamento"
+                type="number"
+                placeholder="Departamento">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="municipio" [(ngModel)]="empresa.Municipio"
+                type="number"
+                placeholder="Municipio">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input matInput name="nombreempresa" [(ngModel)]="empresa.NombreEmpresa"
+                type="text"
+                placeholder="NombreEmpresa">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input matInput name="primernombre" [(ngModel)]="empresa.PrimerNombre"
+                type="text"
+                placeholder="PrimerNombre">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput name="segundonombre" [(ngModel)]="empresa.SegundoNombre"
+                type="text"
+                placeholder="SegundoNombre">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="primerapellido" [(ngModel)]="empresa.PrimerApellido"
+                type="text"
+                placeholder="PrimerApellido">
+        </mat-form-field>
+        
+        <mat-form-field>
+            <input matInput name="segundoapellido" [(ngModel)]="empresa.SegundoApellido"
+                type="text"
+                placeholder="SegundoApellido">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input matInput name="tipovia" [(ngModel)]="empresa.TipoVia"
+                type="text"
+                placeholder="TipoVia">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput name="numerovia" [(ngModel)]="empresa.NumeroVia"
+                type="number"
+                placeholder="NumeroVia">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="adicionalvia" [(ngModel)]="empresa.AdicionalVia"
+                type="text"
+                placeholder="AdicionalVia">
+        </mat-form-field>
+        
+        <mat-form-field>
+            <input matInput name="numerocruce" [(ngModel)]="empresa.NumeroCruce"
+                type="number"
+                placeholder="NumeroCruce">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput name="adicionalcruce" [(ngModel)]="empresa.AdicionalCruce"
+                type="text"
+                placeholder="AdicionalCruce">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input matInput name="ubicacion" [(ngModel)]="empresa.Ubicacion"
+                type="text"
+                placeholder="Ubicación">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput name="telefono" [(ngModel)]="empresa.Telefono"
+                type="number"
+                placeholder="Teléfono">
+        </mat-form-field>
+    </p>
+    <p>
+        <!-- <mat-form-field>
+            <input matInput name="autorizaenvioemail" [(ngModel)]="empresa.AutorizaEnvioEmail"
+                type="text"
+                placeholder="AutorizaEnvioEmail">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input mat-checkbox name="autorizaenviosms" [(ngModel)]="empresa.AutorizaEnvioSMS"
+                type="text"
+                placeholder="AutorizaEnvioSMS">
+        </mat-form-field> -->
+
+        <mat-form-field>
+            <input matInput name="emailnotificacionempresa" [(ngModel)]="empresa.EmailNotificacionEmpresa"
+                type="email"
+                placeholder="EmailNotificacionEmpresa">
+        </mat-form-field>
+    </p>
+    <p>
+        <button type="submit" mat-flat-button color="accent">Actualizar</button>
+    </p>
+</form>
+<!-- <form (ngSubmit)="onSubmit()" #formEditar="ngForm">
+    <p>
+        <mat-form-field>
+            <input matInput name="nombre" [(ngModel)]="mascota.nombre"
+                type="text"
+                placeholder="Nombre">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input matInput name="raza" [(ngModel)]="mascota.raza"
+                type="text"
+                placeholder="Raza">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input matInput name="edad" [(ngModel)]="mascota.edad"
+                type="number"
+                placeholder="Edad">
+        </mat-form-field>
+    </p>
+    <p>
+        <button type="submit" mat-flat-button color="accent">Guardar</button>
+        &nbsp;
+        <button (click)="volver()" type="button" mat-flat-button color="primary">Volver</button>
+    </p>
+</form> -->
